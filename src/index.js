@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Theme } from '@consta/uikit/Theme';
 import { mainTheme } from './theme/main';
 
+import './assets/fonts/stylesheet.css';
 import './index.css';
 import TestTask from './components/Test';
 

@@ -1,5 +1,4 @@
-import './_color/Theme_color_mainPrimary.css';
-import './_color/Theme_color_gpnDark.css';
+import './_color/wrongWayOfDefiningColors.css';
 import './_control/Theme_control_mainTheme.css';
 import './_font/Theme_font_mainTheme.css';
 import './_size/Theme_size_mainTheme.css';
@@ -8,9 +7,9 @@ import './_shadow/Theme_shadow_mainTheme.css';
 
 export const mainTheme = {
   color: {
-    primary: 'mainPrimary',
-    accent: 'gpnDark',
-    invert: 'gpnDark',
+    primary: 'gpnDefault',
+    accent: 'gpnDefault',
+    invert: 'gpnDefault',
   },
   control: 'mainTheme',
   font: 'mainTheme',

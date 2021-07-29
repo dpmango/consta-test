@@ -1,5 +1,110 @@
-.page{
+.test{
   padding: 100px 0;
+  &__head{
+    position: relative;
+    margin-top: 32px;
+    h1{
+      margin: 12px 0 4px;
+    }
+    &::after{
+      display: inline-block;
+      content: ' ';
+      width: 40px;
+      height: 2px;
+      background: var(--color-typo-primary);
+    }
+  }
+  &__content{
+    margin-top: 32px;
+    p{
+      margin: 0;
+      + p {
+        margin-top: 1em;
+      }
+    }
+    .Button{
+      margin-top: 24px;
+    }
+  }
+  &__panel{
+    height: 100%; 
+    background: #F7F7F7;
+    padding: 32px 40px 28px 32px;
+    margin-right: -40px;
+  }
+  &__more{
+    margin-top: 48px;
+  }
+  &__more-tags{
+    margin-top: 32px;
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1208px){
+  .test{
+    &__panel{
+      padding-right: calc(((100vw - 1208px) / 2) + 40px);
+      margin-right: calc(((-100vw + 1208px) / 2) - 40px);
+    }
+  }
+}
+
+@media (max-width: 1120px){
+  .test{
+    &__head{
+      h1{
+        font-size: 56px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px){
+  .test{
+    &__panel{
+      margin-right: 0;
+      padding-right: 32px;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .test{
+    padding: 48px 0;
+    &__head{
+      h1{
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+
+.panel{
+  &__image{
+    padding-bottom: 55.5%;
+    background: var(--color-control-bg-primary);
+    border-radius: var(--control-radius);
+  }
+  &__content{
+    margin-top: 24px;
+  }
+  &__tags{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    > span {
+      flex: 0 0 auto;
+      display: inline-block;
+      margin-right: 16px;
+      margin-bottom: 8px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 .container{
@@ -7,4 +112,11 @@
   padding-left: 40px;
   padding-right: 40px;
   margin: 0 auto;
+}
+
+@media (max-width: 767px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

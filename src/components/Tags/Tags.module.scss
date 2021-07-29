@@ -1,0 +1,22 @@
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  .tag{
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.tag{
+  display: inline-block;
+  padding: 11px 23px;
+  border: 1px solid rgba(0, 66, 105, 0.28);
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 1;
+  transition: background .25s ease-in-out;
+  &_active{
+    background-color: #0078D2;
+    color: white;
+  }
+}

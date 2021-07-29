@@ -1,0 +1,17 @@
+.Theme_color_gpnDefault{
+  --color-typo-primary: #14151A;
+  --color-typo-secondary: #474D57;
+
+  --color-control-bg-primary: linear-gradient(90deg, rgba(15,143,98,1) 0%, rgba(15,143,98,1) 45.83%, rgba(43,180,126,1) 100%);
+  --color-control-bg-primary-hover: linear-gradient(90deg, rgba(43,180,126,1) 0%, rgba(15,143,98,1) 45.83%, rgba(15,143,98,1) 100%);
+
+}
+
+.Theme_color_gpnDefault .Button_view_primary {
+  background: var(--color-control-bg-primary);
+  color: var(--color-control-typo-primary);
+}
+
+.Theme_color_gpnDefault .Button_view_primary:hover {
+  background: var(--color-control-bg-primary-hover);
+}
